@@ -1,0 +1,110 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+head {
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #C5C9A4;
+}
+
+header {
+    height: 370px;
+    width: 100%;
+    background-color: #476A6F;
+    display: flex;
+    justify-content: center;
+}
+
+.name-wrap {
+    margin-top: 0px;
+    padding: 20px;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+#fade-in {
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+#fade-in.load {
+    opacity: 1;
+}
+
+.name-wrap2 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.name {
+    padding-left: 10px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.name .name-name {
+    font-family: "Montserrat";
+    font-size: 90pt;
+    color: #A5E5CA;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.name-wrap2 .name-start {
+    font-family: "Montserrat";
+    color: #A5E5CA;
+    font-size: 40pt;
+    padding: 20px;
+    margin-top: 45px;
+}
+
+.name .under-name {
+    border-left: solid darkblue 5px;
+    margin: 8px 10px;
+    padding-left: 10px;
+    font-size: 15pt;
+    font-family: "Titillium Web";
+    color: #65C6AC;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contact div {
+    color: #65C6AC;
+    font-family: "Titillium Web";
+    font-size: 15pt;
+    padding: 20px;
+}
+
+.contact a {
+    padding: 10px;
+}
+
+.contact img {
+    width: 60px;
+}
