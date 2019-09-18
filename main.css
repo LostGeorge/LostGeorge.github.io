@@ -13,15 +13,18 @@ head {
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #C5C9A4;
+    background-image: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    height: 370px;
+    height: 340px;
     width: 100%;
-    background-color: #476A6F;
+    background-color: #294358;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 10px 10px gray;
 }
 
 .name-wrap {
@@ -34,15 +37,33 @@ header {
     height: 100%;
 }
 
-#fade-in {
-    -webkit-transition: opacity 2s ease-in;
-    -moz-transition: opacity 2s ease-in;
-    -ms-transition: opacity 2s ease-in;
-    -o-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in;
+@keyframes fadeinup {
+    from { transform: translate3d(0,20px,0); opacity: 0; }
+    to   { transform: translate3d(0,0,0); opacity: 1; }
 }
-#fade-in.load {
-    opacity: 1;
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinup {
+    from { transform: translate3d(0,20px,0); opacity: 0; }
+    to   { transform: translate3d(0,0,0); opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinup {
+    from { transform: translate3d(0,20px,0); opacity: 0; }
+    to   { transform: translate3d(0,0,0); opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinup {
+    from { transform: translate3d(0,20px,0); opacity: 0; }
+    to   { transform: translate3d(0,0,0); opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadeinup {
+    from { transform: translate3d(0,20px,0); opacity: 0; }
+    to   { transform: translate3d(0,0,0); opacity: 1; }
 }
 
 .name-wrap2 {
@@ -59,12 +80,20 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    opacity: 0;
+    -webkit-animation: fadeinup 0.75s ease-in;
+    -moz-animation: fadeinup 0.75s ease-in;
+    -ms-animation: fadeinup 0.75s ease-in;
+    -o-animation: fadeinup 0.75s ease-in;
+    animation: fadeinup 0.75s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 .name .name-name {
     font-family: "Montserrat";
     font-size: 90pt;
-    color: #A5E5CA;
+    color: #CEBC87;
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
@@ -73,38 +102,207 @@ header {
 
 .name-wrap2 .name-start {
     font-family: "Montserrat";
-    color: #A5E5CA;
+    color: #CEBC87;
     font-size: 40pt;
     padding: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
+    -webkit-animation: fadeinup 0.75s ease-in;
+    -moz-animation: fadeinup 0.75s ease-in;
+    -ms-animation: fadeinup 0.75s ease-in;
+    -o-animation: fadeinup 0.75s ease-in;
+    animation: fadeinup 0.75s ease-in;
+    animation-fill-mode: fowrards;
+}
+
+#start2 {
+    margin-left: -15px;
+    -webkit-animation: fadeinup 0.75s ease-in;
+    -moz-animation: fadeinup 0.75s ease-in;
+    -ms-animation: fadeinup 0.75s ease-in;
+    -o-animation: fadeinup 0.75s ease-in;
+    animation: fadeinup 0.75s ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 
 .name .under-name {
     border-left: solid darkblue 5px;
     margin: 8px 10px;
-    padding-left: 10px;
-    font-size: 15pt;
+    padding-left: 15px;
+    font-size: 18pt;
     font-family: "Titillium Web";
-    color: #65C6AC;
+    color: #90AC9A;
 }
 
 .contact {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    -webkit-animation: fadeinup 0.75s ease-in;
+    -moz-animation: fadeinup 0.75s ease-in;
+    -ms-animation: fadeinup 0.75s ease-in;
+    -o-animation: fadeinup 0.75s ease-in;
+    animation: fadeinup 0.75s ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 .contact div {
-    color: #65C6AC;
+    color: #90AC9A;
     font-family: "Titillium Web";
     font-size: 15pt;
     padding: 20px;
 }
 
 .contact a {
-    padding: 10px;
+    padding: 0px 15px;
+    margin: 10px 0px;
 }
 
 .contact img {
     width: 60px;
+}
+
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro {
+    width: 50%;
+    margin: 30px;
+    padding: 20px;
+    font-family: "Open Sans";
+    font-size: 15pt;
+    background-color: #D9813D;
+    color: #294358;
+    box-shadow: 5px 5px 5px gray;
+    text-align: center;
+    font-weight: bold;
+}
+
+.portfolio-wrap {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 70%;
+    background-color: rgb(144,172,154, 0.6);
+    padding: 20px;
+    box-shadow: 5px 5px 5px #25243E;
+}
+
+.portfolio-title {
+    font-family: "Montserrat";
+    font-size: 25pt;
+    color: #294358;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-item {
+    margin: 15px;
+    padding: 15px;
+    height: 340px;
+    width: 45%;
+    background-color: #D9813D;
+    box-shadow: 5px 5px 5px dimgrey;
+    font-family: "Open Sans";
+    font-size: 15pt;
+    color: #294358;
+}
+
+.content-header {
+    margin: 10px 0px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #4B595F;
+    font-weight: bold;
+    height: 40px
+}
+
+.skills-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: rgb(144,172,154, 0.6);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #25243E;
+}
+
+.skills-header {
+    font-family: "Montserrat";
+    font-size: 25pt;
+    color: #294358;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-head {
+    font-weight: bold;
+    background-color: #D9813D;
+    padding: 3px 10px;
+    box-shadow: 5px 5px 5px dimgray;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15pt;
+    font-family: "Titillium Web";
+    margin: 10px 5px;
+}
+
+.skills-item {
+    font-weight: bold;
+    margin: 0px 10px;
+    padding: 3px 10px;
+    background-color: #CEBC87;
+    box-shadow: 5px 5px 5px dimgray;
+}
+
+.content-header img {
+    width: 40px;
+}
+
+.content-header a {
+    margin-top: -10px;
+    float: right;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    color: white;
+    font-family: "Open Sans"
 }
