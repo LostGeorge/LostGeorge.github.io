@@ -170,6 +170,14 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    -webkit-animation: fadeinup 0.75s ease-in;
+    -moz-animation: fadeinup 0.75s ease-in;
+    -ms-animation: fadeinup 0.75s ease-in;
+    -o-animation: fadeinup 0.75s ease-in;
+    animation: fadeinup 0.75s ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
 }
 
 .intro {
