@@ -13,7 +13,7 @@ head {
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("img/back.jpg");
+    background-image: url("img/back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,10 +21,9 @@ body {
 header {
     height: 340px;
     width: 100%;
-    background-color: #294358;
+    background-color: rgba(190, 197, 249, 0.8);
     display: flex;
     justify-content: center;
-    box-shadow: 0px 10px 10px gray;
 }
 
 .name-wrap {
@@ -93,7 +92,7 @@ header {
 .name .name-name {
     font-family: "Montserrat";
     font-size: 90pt;
-    color: #CEBC87;
+    color: #012B80;
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
@@ -102,7 +101,7 @@ header {
 
 .name-wrap2 .name-start {
     font-family: "Montserrat";
-    color: #CEBC87;
+    color: #012B80;
     font-size: 40pt;
     padding: 20px;
     margin-top: 40px;
@@ -127,12 +126,12 @@ header {
 }
 
 .name .under-name {
-    border-left: solid darkblue 5px;
+    border-left: solid #4A97BD 4px;
     margin: 8px 10px;
     padding-left: 15px;
     font-size: 18pt;
     font-family: "Titillium Web";
-    color: #90AC9A;
+    color: #4A97BD;
 }
 
 .contact {
@@ -150,7 +149,7 @@ header {
 }
 
 .contact div {
-    color: #90AC9A;
+    color: #4A97BD;
     font-family: "Titillium Web";
     font-size: 15pt;
     padding: 20px;
@@ -183,14 +182,21 @@ header {
 .intro {
     width: 50%;
     margin: 30px;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 25px 35px;
     font-family: "Open Sans";
     font-size: 15pt;
-    background-color: #D9813D;
-    color: #294358;
-    box-shadow: 5px 5px 5px gray;
-    text-align: center;
+    background-color: rgba(211, 240, 254, 0.9);
+    color: #012B80;
+    text-align: left;
+}
+
+.intro-header {
     font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 25pt;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .portfolio-wrap {
@@ -199,20 +205,17 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 70%;
-    background-color: rgb(144,172,154, 0.6);
-    padding: 20px;
-    box-shadow: 5px 5px 5px #25243E;
+    width: 65%;
+    background-color: rgba(216, 226, 250, 0.85);
+    padding: 25px 35px;
 }
 
 .portfolio-title {
     font-family: "Montserrat";
     font-size: 25pt;
-    color: #294358;
+    color: #012B80;
     font-weight: bold;
-    text-decoration: underline;
     margin-bottom: 10px;
-
 }
 
 .portfolio-content {
@@ -230,22 +233,38 @@ header {
 
 .content-item {
     margin: 15px;
-    padding: 15px;
-    height: 340px;
+    padding: 15px 30px;
+    height: 370px;
     width: 45%;
     background-color: #D9813D;
-    box-shadow: 5px 5px 5px dimgrey;
+    box-shadow: 5px 5px 5px grey;
     font-family: "Open Sans";
     font-size: 15pt;
-    color: #294358;
+    color: #454545;
 }
 
 .content-header {
     margin: 10px 0px;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #4B595F;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #454545;
     font-weight: bold;
     height: 40px
+}
+
+#content-1 {
+    background-color: #E7C7C7;
+}
+
+#content-2 {
+    background-color: #B5D2B9;
+}
+
+#content-3 {
+    background-color: #B2C9E0;
+}
+
+#content-4 {
+    background-color: #D7C1E5
 }
 
 .skills-wrap {
@@ -253,28 +272,29 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: rgb(144,172,154, 0.6);
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px #25243E;
+    background-color: rgba(217, 205, 246, 0.85);
+    padding: 25px 35px;
+    margin: 30px;
 }
 
 .skills-header {
     font-family: "Montserrat";
     font-size: 25pt;
-    color: #294358;
+    color: #012B80;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .skills-head {
     font-weight: bold;
-    background-color: #D9813D;
+    background-color: #B6D0F3;
     padding: 3px 10px;
-    box-shadow: 5px 5px 5px dimgray;
+    box-shadow: 2px 2px 2px gray;
+    margin-right: 10px;
 }
 
 .skills-box {
+    color: #012B80;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -287,8 +307,8 @@ header {
     font-weight: bold;
     margin: 0px 10px;
     padding: 3px 10px;
-    background-color: #CEBC87;
-    box-shadow: 5px 5px 5px dimgray;
+    background-color: #D0DEC3;
+    box-shadow: 2px 2px 2px gray;
 }
 
 .content-header img {
@@ -296,13 +316,12 @@ header {
 }
 
 .content-header a {
-    margin-top: -10px;
+    margin-top: -7px;
     float: right;
 }
 
 footer {
-    margin-top: 30px;
-    background-color: black;
+    margin-top: 50px;
     height: 100px;
     width: 100%;
     display: flex;
@@ -311,6 +330,6 @@ footer {
 }
 
 footer div {
-    color: white;
-    font-family: "Open Sans"
+    color: black;
+    font-family: "Open Sans";
 }
